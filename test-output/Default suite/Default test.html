@@ -1,0 +1,539 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jun 29 12:33:56 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22368 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid.ConfigureAppium()'><b>ConfigureAppium</b><br>Test class: org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid</td>
+<td><div><pre>io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: Appium HTTP server is not listening at http://127.0.0.1:4723/ after 20000 ms timeout. Consider increasing the server startup timeout value and check the server log for possible error messages occurrences.
+Node.js executable path: C:\Program Files\nodejs\node.exe
+Arguments: [C:\Users\user1\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1]
+Server log: [35m[Appium][39m Welcome to Appium v2.5.4
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { address: [32m&apos;127.0.0.1&apos;[39m }
+[35m[Appium][39m The autodetected Appium home path: C:\Users\user1\.appium
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\user1\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m AndroidUiautomator2Driver has been successfully loaded in 5.774s
+[35m[Appium][39m Appium REST http interface listener started on http://127.0.0.1:4723
+[35m[Appium][39m Available drivers:
+[35m[Appium][39m   - uiautomator2@3.5.1 (automationName &apos;UiAutomator2&apos;)
+[35m[Appium][39m No plugins have been installed. Use the &quot;appium plugin&quot; command to install the one(s) you want to use.
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:192)
+	at org.appiumpractise.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:30)
+	at org.appiumpractise.TestComponents.BaseTest.ConfigureAppium(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.appium.java_client.service.local.AppiumServerAvailabilityChecker$ConnectionTimeout: ConnectionTimeout
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:72)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:144)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:185)
+	... 28 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.connectToUrl(AppiumServerAvailabilityChecker.java:79)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:61)
+	... 30 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1732238286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1732238286'><pre>io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: Appium HTTP server is not listening at http://127.0.0.1:4723/ after 20000 ms timeout. Consider increasing the server startup timeout value and check the server log for possible error messages occurrences.
+Node.js executable path: C:\Program Files\nodejs\node.exe
+Arguments: [C:\Users\user1\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1]
+Server log: [35m[Appium][39m Welcome to Appium v2.5.4
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { address: [32m&apos;127.0.0.1&apos;[39m }
+[35m[Appium][39m The autodetected Appium home path: C:\Users\user1\.appium
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\user1\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m AndroidUiautomator2Driver has been successfully loaded in 5.774s
+[35m[Appium][39m Appium REST http interface listener started on http://127.0.0.1:4723
+[35m[Appium][39m Available drivers:
+[35m[Appium][39m   - uiautomator2@3.5.1 (automationName &apos;UiAutomator2&apos;)
+[35m[Appium][39m No plugins have been installed. Use the &quot;appium plugin&quot; command to install the one(s) you want to use.
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:192)
+	at org.appiumpractise.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:30)
+	at org.appiumpractise.TestComponents.BaseTest.ConfigureAppium(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.appium.java_client.service.local.AppiumServerAvailabilityChecker$ConnectionTimeout: ConnectionTimeout
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:72)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:144)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:185)
+	... 28 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.connectToUrl(AppiumServerAvailabilityChecker.java:79)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:61)
+	... 30 more
+</pre></div></td>
+<td>20</td>
+<td>org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid@e350b40</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid.preSetup()'><b>preSetup</b><br>Test class: org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid</td>
+<td></td>
+<td>0</td>
+<td>org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid@e350b40</td></tr>
+<tr>
+<td title='org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid.preSetup()'><b>preSetup</b><br>Test class: org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid</td>
+<td></td>
+<td>0</td>
+<td>org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid@e350b40</td></tr>
+<tr>
+<td title='org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid.TearDown()'><b>TearDown</b><br>Test class: org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid</td>
+<td></td>
+<td>0</td>
+<td>org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid@e350b40</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid.E2E_TC()'><b>E2E_TC</b><br>Test class: org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid<br>Parameters: {name=Jitendra, countryName=India, gender=male}</td>
+<td><div><pre>io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: Appium HTTP server is not listening at http://127.0.0.1:4723/ after 20000 ms timeout. Consider increasing the server startup timeout value and check the server log for possible error messages occurrences.
+Node.js executable path: C:\Program Files\nodejs\node.exe
+Arguments: [C:\Users\user1\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1]
+Server log: [35m[Appium][39m Welcome to Appium v2.5.4
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { address: [32m&apos;127.0.0.1&apos;[39m }
+[35m[Appium][39m The autodetected Appium home path: C:\Users\user1\.appium
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\user1\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m AndroidUiautomator2Driver has been successfully loaded in 5.774s
+[35m[Appium][39m Appium REST http interface listener started on http://127.0.0.1:4723
+[35m[Appium][39m Available drivers:
+[35m[Appium][39m   - uiautomator2@3.5.1 (automationName &apos;UiAutomator2&apos;)
+[35m[Appium][39m No plugins have been installed. Use the &quot;appium plugin&quot; command to install the one(s) you want to use.
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:192)
+	at org.appiumpractise.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:30)
+	at org.appiumpractise.TestComponents.BaseTest.ConfigureAppium(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.appium.java_client.service.local.AppiumServerAvailabilityChecker$ConnectionTimeout: ConnectionTimeout
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:72)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:144)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:185)
+	... 28 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.connectToUrl(AppiumServerAvailabilityChecker.java:79)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:61)
+	... 30 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace352776719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace352776719'><pre>io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: Appium HTTP server is not listening at http://127.0.0.1:4723/ after 20000 ms timeout. Consider increasing the server startup timeout value and check the server log for possible error messages occurrences.
+Node.js executable path: C:\Program Files\nodejs\node.exe
+Arguments: [C:\Users\user1\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1]
+Server log: [35m[Appium][39m Welcome to Appium v2.5.4
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { address: [32m&apos;127.0.0.1&apos;[39m }
+[35m[Appium][39m The autodetected Appium home path: C:\Users\user1\.appium
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\user1\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m AndroidUiautomator2Driver has been successfully loaded in 5.774s
+[35m[Appium][39m Appium REST http interface listener started on http://127.0.0.1:4723
+[35m[Appium][39m Available drivers:
+[35m[Appium][39m   - uiautomator2@3.5.1 (automationName &apos;UiAutomator2&apos;)
+[35m[Appium][39m No plugins have been installed. Use the &quot;appium plugin&quot; command to install the one(s) you want to use.
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:192)
+	at org.appiumpractise.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:30)
+	at org.appiumpractise.TestComponents.BaseTest.ConfigureAppium(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.appium.java_client.service.local.AppiumServerAvailabilityChecker$ConnectionTimeout: ConnectionTimeout
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:72)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:144)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:185)
+	... 28 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.connectToUrl(AppiumServerAvailabilityChecker.java:79)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:61)
+	... 30 more
+</pre></div></td>
+<td>0</td>
+<td>org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid@e350b40</td></tr>
+<tr>
+<td title='org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid.E2E_TC()'><b>E2E_TC</b><br>Test class: org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid<br>Parameters: {name=Hannah Mckay, countryName=Argentina, gender=female}</td>
+<td><div><pre>io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: Appium HTTP server is not listening at http://127.0.0.1:4723/ after 20000 ms timeout. Consider increasing the server startup timeout value and check the server log for possible error messages occurrences.
+Node.js executable path: C:\Program Files\nodejs\node.exe
+Arguments: [C:\Users\user1\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1]
+Server log: [35m[Appium][39m Welcome to Appium v2.5.4
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { address: [32m&apos;127.0.0.1&apos;[39m }
+[35m[Appium][39m The autodetected Appium home path: C:\Users\user1\.appium
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\user1\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m AndroidUiautomator2Driver has been successfully loaded in 5.774s
+[35m[Appium][39m Appium REST http interface listener started on http://127.0.0.1:4723
+[35m[Appium][39m Available drivers:
+[35m[Appium][39m   - uiautomator2@3.5.1 (automationName &apos;UiAutomator2&apos;)
+[35m[Appium][39m No plugins have been installed. Use the &quot;appium plugin&quot; command to install the one(s) you want to use.
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:192)
+	at org.appiumpractise.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:30)
+	at org.appiumpractise.TestComponents.BaseTest.ConfigureAppium(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.appium.java_client.service.local.AppiumServerAvailabilityChecker$ConnectionTimeout: ConnectionTimeout
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:72)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:144)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:185)
+	... 28 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.connectToUrl(AppiumServerAvailabilityChecker.java:79)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:61)
+	... 30 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace594858858", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace594858858'><pre>io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: Appium HTTP server is not listening at http://127.0.0.1:4723/ after 20000 ms timeout. Consider increasing the server startup timeout value and check the server log for possible error messages occurrences.
+Node.js executable path: C:\Program Files\nodejs\node.exe
+Arguments: [C:\Users\user1\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1]
+Server log: [35m[Appium][39m Welcome to Appium v2.5.4
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { address: [32m&apos;127.0.0.1&apos;[39m }
+[35m[Appium][39m The autodetected Appium home path: C:\Users\user1\.appium
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\user1\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m AndroidUiautomator2Driver has been successfully loaded in 5.774s
+[35m[Appium][39m Appium REST http interface listener started on http://127.0.0.1:4723
+[35m[Appium][39m Available drivers:
+[35m[Appium][39m   - uiautomator2@3.5.1 (automationName &apos;UiAutomator2&apos;)
+[35m[Appium][39m No plugins have been installed. Use the &quot;appium plugin&quot; command to install the one(s) you want to use.
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:192)
+	at org.appiumpractise.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:30)
+	at org.appiumpractise.TestComponents.BaseTest.ConfigureAppium(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.appium.java_client.service.local.AppiumServerAvailabilityChecker$ConnectionTimeout: ConnectionTimeout
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:72)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:144)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:185)
+	... 28 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.&lt;init&gt;(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.connectToUrl(AppiumServerAvailabilityChecker.java:79)
+	at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:61)
+	... 30 more
+</pre></div></td>
+<td>0</td>
+<td>org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid@e350b40</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="Smoke"></include>
+</run>
+</groups>
+
+<listeners>
+<listener class-name="org.appiumpractise.TestComponents.Listeners"></listener>
+</listeners>
+
+	<test thread-count="5" name="End To End FrameWork Test">
+		<classes>
+			<class name="org.appiumpractise.TestCases.eCommerce_tc_1" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Error Validation Test">
+		<classes>
+			<class name="org.appiumpractise.TestCases.eCommerce_tc_1" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Sanity Test">
+		<classes>
+			<class name="org.appiumpractise.TestCases.eCommerce_tc_1" />
+			<class name="org.appiumpractise.TestCases.eCommerce_tc_2" />
+			<class name="org.appiumpractise.TestCases.eCommerce_tc_3" />
+			<class name="org.appiumpractise.TestCases.eCommerce_tc_4_Hybrid" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- bs://11f6f5a99a5c1cfe67f01638732fd950ad066732 -->
